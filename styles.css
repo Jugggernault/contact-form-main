@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    box-sizing: border-box;
+
+}
+
+
+body{
+    background-color: hsl(148, 38%, 91%);
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.main{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-height: 90%;
+}
+
+.name,.general-entry{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    display: none;
+    color: hsl(0, 66%, 54%);
+}
+
+p input,.gen-entry{
+    height: 35px;
+    width: 100%;
+    border: solid 1px hsl(186, 15%, 59%);
+    border-radius: 8px;
+    outline: none;
+}
+
+button[type='submit'] {
+    border: none;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 8px;
+}
+.gen-entry{
+    padding: 5px;
+    height: 40;
+}
+.query{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+textarea{
+    border-radius: 8px;
+    outline: none;
+}
+.name p{
+    width: 100%;
+}
+label{
+    padding-bottom: 10px;
+}
+form{
+    width: 100%;
+}
+input:hover{
+    cursor: pointer;
+    border: 1.4px solid hsla(169, 82%, 27%, 0.534);
+}
+.title{
+    height: 20px;
+    margin-top: 0;
+}
+@media (min-width:1000px){
+    .form-wrapper{
+        min-width: 600px;
+    }
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="form-wrapper">
+        <form action="">
+          <h1 class="title">Contact Us</h1>
+
+          <div class="name">
+            <p>
+              <label for="f-name">First Name</label>
+              <input id="f-name" type="text" required />
+              <span class="error">This field is required</span>
+            </p>
+
+            <p>
+              <label for="l-name">Last Name</label>
+              <input id="l-name" type="text">
+              <span class="error">This field is required</span>
+            </p>
+          </div>
+
+          <p>
+            <label for="e-mail">Email Address</label>
+            <input id="e-mail" type="email">
+            <span class="error">Please enter a valid email address</span>
+            <span class="error">This field is required</span>
+          </p>
+
+          <div class="query">
+            Query Type 
+            <div class="general-entry">
+              <div class="gen-entry">              
+                <input id="gen" type="radio" name="query" value="general" />
+                <label for="gen">General Enquiry</label>
+              </div>
+
+              <div class="gen-entry">
+                <input id="sup" type="radio" name="query" value="support" />
+                <label for="sup">Support Request</label>
+              </div>
+            </div>
+            <span>Please select a query type</span>
+          </div>
+
+          <p>
+            <label for="msg">Message</label>
+            <textarea name="message" id="msg" rows="4"></textarea>
+            <span class="error">This field is required</span>
+          </p>
+
+          <p>
+            <div class="agree" >            
+              <input type="checkbox" name="agree" id="cst" />
+              <label class="agree" for="cst">I consent to being contacted by the team</label>
+            </div>
+
+            <span class="error ">To submit this form, please consent to being contacted</span>
+          </p>
+          <p><button type="submit" class="btn">submit</button></p>
+        </form>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Abed-Négo</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
